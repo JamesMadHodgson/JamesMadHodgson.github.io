@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}
+
+body,header,footer {
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+img {
+
+    max-width: 25%;
+    float: right;
+    margin-right: 10px;
+    min-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
