@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue%7cCrimson+Text&display=swap');
+
+/* phone and baseline views */
+
+header,
+h1 img footer {
+    margin: 0;
+    padding: 1px;
+    margin: 0.5rem;
+    padding: 10px;
+    flex: 0 1 100%;
+}
+
+h1 {
+    float: center;
+}
+
+nav {
+    background-color: #f1fffa;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #654f6f;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #094074;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 14px;
+}
+
+main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+}
+
+section {
+    background-color: #f4e76e;
+    margin: 0.5rem;
+    border: 5px solid #a29587;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+section,
+h2,
+h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+section,
+p {
+    font-family: 'Crimson Text', serif;
+}
+
+
+/* Tablet Views */
+
+@media only screen and (min-width: 37.5em) {
+    Flex *********************/ nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    section:nth-child(2) {
+        display: block;
+    }
+    section:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+
+/* Desktop Views */
+
+@media only screen and (min-width: 60em) {
+    nav {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
+}
