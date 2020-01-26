@@ -36,7 +36,8 @@ nav a {
     font-size: 1rem;
 }
 
-nav a:hover {
+nav a,
+hover {
     background-color: #654f6f;
     border-radius: 10px;
 }
@@ -78,10 +79,10 @@ p {
 /* Tablet Views */
 
 @media only screen and (min-width: 37.5em) {
-    Flex *********************/ nav ul {
+    Flex nav ul {
         display: flex;
     }
-    nav ul li {
+    nav a {
         flex: 1 1 100%;
     }
     main {
