@@ -36,9 +36,9 @@ nav a {
     font-size: 1rem;
 }
 
-nav a,
-hover {
+nav a:hover {
     background-color: #654f6f;
+    color: #f1fffa;
     border-radius: 10px;
 }
 
@@ -73,46 +73,4 @@ h3 {
 section,
 p {
     font-family: 'Crimson Text', serif;
-}
-
-
-/* Tablet Views */
-
-@media only screen and (min-width: 37.5em) {
-    Flex nav ul {
-        display: flex;
-    }
-    nav a {
-        flex: 1 1 100%;
-    }
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-    section:nth-child(2) {
-        display: block;
-    }
-    section:nth-child(3) {
-        grid-column: span 2;
-    }
-}
-
-
-/* Desktop Views */
-
-@media only screen and (min-width: 60em) {
-    nav {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    section:nth-child(3) {
-        grid-column: span 1;
-    }
 }
