@@ -5,6 +5,9 @@
         margin-left: 20%;
         margin-right: 20%;
     }
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -13,7 +16,10 @@
         margin-left: 20%;
         margin-right: 20%;
     }
-    section:nth-child(3) {
-        grid-column: span 2;
+    main div {
+        grid-column: span 1;
+    }
+    footer {
+        width: 55rem;
     }
 }

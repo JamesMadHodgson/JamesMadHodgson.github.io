@@ -1,19 +1,26 @@
 /* Tablet Views */
 
 @media only screen and (min-width: 37.5em) {
-    nav {
-        display: flex;
+    nav button {
+        display: none;
     }
-    nav a {
-        flex: 1 1 100%;
-    }
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-    section:nth-child(2) {
+    nav ul.hide {
         display: block;
     }
-    section:nth-child(3) {
-        grid-column: span 2;
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
     }
 }

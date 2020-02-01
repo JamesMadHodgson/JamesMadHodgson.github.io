@@ -8,11 +8,7 @@
     main {
         grid-template-columns: 1fr 1fr;
     }
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
+    main {}
     section:nth-child(3) {
         grid-column: span 1;
     }
