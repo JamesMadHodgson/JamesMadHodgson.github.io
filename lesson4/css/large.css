@@ -8,6 +8,9 @@
         margin-left: 20%;
         margin-right: 20%;
     }
+    nav ul {
+        display: flex;
+    }
     nav ul li a {
         padding: .6rem 1rem;
     }
