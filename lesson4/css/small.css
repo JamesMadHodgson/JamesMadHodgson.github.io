@@ -17,6 +17,13 @@ body {
     flex: 0 1 100%;
 }
 
+footer {
+    background-color: #f4e76e;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
 h1 {
     font-family: 'Bebas Neue', cursive;
 }
