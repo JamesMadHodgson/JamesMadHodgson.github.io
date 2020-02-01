@@ -1,6 +1,9 @@
 /* Desktop Views */
 
 @media only screen and (min-width: 60em) {
+    footer {
+        width: 55rem;
+    }
     nav {
         margin-left: 20%;
         margin-right: 20%;
