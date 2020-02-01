@@ -89,10 +89,3 @@ main {
     display: block;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
-
-footer {
-    background-color: #f4e76e;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-}
