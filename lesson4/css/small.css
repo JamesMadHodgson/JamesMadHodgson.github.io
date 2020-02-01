@@ -8,7 +8,7 @@ html {
 
 /*----------- apply a natural box layout model to all elements --------------*/
 
-body {
+body footer {
     text-align: center;
     font-size: 14px;
     background-color: lightblue;

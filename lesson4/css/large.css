@@ -9,9 +9,6 @@
         padding: .6rem 1rem;
     }
     main {
-        grid-template-columns: 1fr 1fr;
-    }
-    main {
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 20%;
         margin-right: 20%;
