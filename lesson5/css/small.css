@@ -8,17 +8,6 @@ html {
 
 /*----------- apply a natural box layout model to all elements --------------*/
 
-
-/*
-* {
-    margin-left: 20%;
-    margin-right: 20%;
-}*/
-
-header {
-    display: flex;
-}
-
 body {
     text-align: center;
     font-size: 14px;
