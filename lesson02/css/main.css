@@ -1,49 +1,47 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
 /* phone and baseline views */
 
 body {
+    position: relative;
     text-align: center;
     font-size: 16px;
-    font-family: "Exo", sans-serif;
-    background-color: cornsilk;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: whitesmoke;
 }
 
 main {
-    max-width: 767px;
     margin: 0 auto;
+    max-width: 767px;
     display: grid;
     grid-template-columns: 1fr;
     font-size: 0.8rem;
 }
 
-h1 {
-    color: black;
+header,
+footer {
+    background-color: skyblue;
 }
 
 h2 {
-    color: brown;
+    color: burlywood;
 }
 
 h3 {
-    color: blue;
+    color: maroon;
 }
 
 section {
     margin: 0.5rem;
-    border: 1px solid #bbb;
     padding: 1rem;
-    background-color: #eee;
+    border: 1px solid black;
 }
 
 p,
 img {
     max-width: 95%;
-    border: radius 0.5;
-}
-
-header,
-footer {
-    background-color: rgb(81, 149, 164);
-    margin: auto;
+    border: radius 0.8;
 }
 
 
