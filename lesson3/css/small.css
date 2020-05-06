@@ -8,7 +8,9 @@ html {
 }
 
 header,
-h1 img footer {
+h1,
+img,
+footer {
     margin: 0;
     padding: 1px;
     margin: 0.5rem;
@@ -24,13 +26,6 @@ nav {
     background-color: #f1fffa;
     text-align: center;
     border-radius: 10px;
-}
-
-nav a {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
 nav a {
