@@ -8,14 +8,17 @@ html {
 }
 
 header,
-h1,
-img,
+main,
+nav,
 footer {
-    margin: 0;
-    padding: 1px;
-    margin: 0.5rem;
-    padding: 10px;
-    flex: 0 1 100%;
+    margin: 0 auto;
+    max-width: 767px;
+}
+
+header,
+footer {
+    background-color: brown;
+    border-radius: 2px;
 }
 
 h1 {
@@ -25,7 +28,7 @@ h1 {
 nav {
     background-color: #f1fffa;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 nav a {
@@ -39,7 +42,7 @@ nav a {
 nav a:hover {
     background-color: #654f6f;
     color: #f1fffa;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 body {
@@ -61,7 +64,7 @@ section {
     margin: 0.5rem;
     border: 5px solid #a29587;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 section,
