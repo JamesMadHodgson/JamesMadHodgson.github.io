@@ -1,79 +1,88 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue%7cCrimson+Text&display=swap');
-
-/* phone and baseline views */
-
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-
-header,
-main,
-nav,
-footer {
-    margin: 0 auto;
-    max-width: 767px;
-}
-
-header,
-footer {
-    background-color: brown;
-    border-radius: 2px;
-}
-
-h1 {
-    float: center;
-}
-
-nav {
-    background-color: #f1fffa;
-    text-align: center;
-    border-radius: 1px;
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 0.75rem;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    background-color: #654f6f;
-    color: #f1fffa;
-    border-radius: 1px;
-}
-
-body {
-    background-color: lightblue;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    font-size: 14px;
-}
-
-main {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 1rem;
-}
-
-section {
-    background-color: #f4e76e;
-    margin: 0.5rem;
-    border: 5px solid #a29587;
-    padding: 1rem;
-    border-radius: 1px;
-}
-
-section,
-h2,
-h3 {
-    font-family: 'Bebas Neue', cursive;
-}
-
-section,
-p {
-    font-family: 'Crimson Text', serif;
-}
+    @import url('https://fonts.googleapis.com/css?family=Bebas+Neue%7cCrimson+Text&display=swap');
+    /* phone and baseline views */
+    
+    html {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    
+    body {
+        background-color: #f7f7ff;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+        max-width: 767px;
+        padding: 2px;
+    }
+    
+    header,
+    footer {
+        background-color: #38b6ff;
+        border-radius: 2px;
+        padding: 2px;
+    }
+    
+    h1 {
+        float: center;
+        color: #07020D;
+    }
+    
+    nav {
+        background-color: #fec601;
+        text-align: center;
+        border-radius: 1px;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.75rem;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    nav a:hover {
+        background-color: #654f6f;
+        color: #f1fffa;
+        border-radius: 1px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    main {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 1rem;
+    }
+    
+    section {
+        background-color: #fff05a;
+        margin: 0.5rem;
+        border: 5px solid #a29587;
+        padding: 1rem;
+        border-radius: 1px;
+    }
+    
+    section,
+    h2,
+    h3 {
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    section,
+    p {
+        font-family: 'Crimson Text', serif;
+    }
