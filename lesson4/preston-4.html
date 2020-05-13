@@ -7,6 +7,8 @@
     <meta name="author" content="James Hodgson">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Wrong Again lesson 4 preston Idaho</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue%7cCrimson+Text&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
@@ -18,12 +20,12 @@
 
 <body>
     <header>
-        <h1><img src="images/weathersightimage.gif" alt="wrong again weather forcast">Wrong Again</h1>
+        <img src="images/WrongAgainWeathertake2.jpg" alt="wrong again weather forcast">
 
     </header>
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav" class="hide">
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -43,12 +45,12 @@
 
 
     <footer>
-        <p>&copy; <span></span>2020 James Hodgson | BYU-I | <br>
-            <span id="currentDate">Saturday, February 2020</span></p>
+        <p>&copy; <span id="year"></span>2020 James Hodgson | Utah | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p>Last Updated:<span id="lastModified"></span></p>
+        <script src="main.js"></script>
     </footer>
 
-    <script src="js/script.js">
-    </script>
+
 </body>
 
 </html>

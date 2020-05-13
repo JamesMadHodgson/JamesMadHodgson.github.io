@@ -9,30 +9,36 @@ html {
 /*----------- apply a natural box layout model to all elements --------------*/
 
 
-/*
-* {
-    margin-left: 20%;
-    margin-right: 20%;
-}*/
-
-body {
+/*body {
     text-align: center;
     font-size: 14px;
-    background-color: lightblue;
+    background-color: #f7f7ff;
     margin: 0.5rem;
     padding: 10px;
     flex: 0 1 100%;
-}
+}*/
 
-footer {
-    background-color: #f4e76e;
-    padding: 5px;
-    margin: auto;
-    border-radius: 10px;
-}
-
-h1 {
+body {
+    background-color: #f7f7ff;
     font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 14px;
+}
+
+header,
+main,
+nav,
+footer {
+    margin: 0 auto;
+    max-width: 767px;
+    padding: 2px;
+}
+
+header,
+footer {
+    background-color: #38b6ff;
+    border-radius: 2px;
+    padding: 2px;
 }
 
 nav button {
@@ -41,14 +47,13 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: #fff;
-    border-radius: 10px;
 }
 
 nav {
-    background-color: #f4e76e;
-    font-family: cursive, sans-serif;
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #fec601;
     text-align: center;
-    border-radius: 10px;
 }
 
 nav ul {
@@ -58,16 +63,16 @@ nav ul {
     overflow: hidden;
 }
 
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+nav a:hover {
+    background-color: #654f6f;
+    color: #f1fffa;
 }
 
 nav ul li a {
     display: block;
     padding: 2px;
     margin: 2px;
-    border-radius: 2px;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid #654f6f;
 }
 
 nav ul.hide {

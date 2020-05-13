@@ -1,14 +1,6 @@
 /* Desktop Views */
 
 @media only screen and (min-width: 60em) {
-    footer {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    nav {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
     nav ul {
         display: flex;
     }
@@ -20,8 +12,6 @@
     }
     main {
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 20%;
-        margin-right: 20%;
     }
     main div {
         grid-column: span 1;
