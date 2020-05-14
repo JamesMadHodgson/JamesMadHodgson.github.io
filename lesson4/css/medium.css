@@ -1,28 +1,19 @@
     /* 35em is also 560px when basefont is 16px */
     
     @media only screen and (min-width: 35rem) {
-        header {
+        .navigation {
             display: flex;
         }
-        nav button {
-            display: none;
-        }
-        nav ul.hide {
+        .navigation li {
             display: block;
+            /* change state in small view */
+            flex: 1 1 auto;
         }
-        nav ul {
-            margin-left: 2%;
+        .navigation a {
+            text-align: center;
         }
-        nav ul li {
-            display: inline-block;
-        }
-        nav ul li {
-            flex: 1 1 100%;
-        }
-        nav ul li a {
-            border: none;
-            border-right: 1px solid rgba(0, 0, 0, 0.3);
-            padding: .8rem 1rem;
+        .navigation li:first-child {
+            display: none;
         }
     }
     /*end medium */

@@ -1,7 +1,7 @@
-function toggleMenu() {
+const hambutton = document.querySelector('.ham');
+const mainnav = document.querySelector('.navigation')
 
-    document.getElementById("primaryNav").classList.toggle("hide");
-}
+hambutton.addEventListener('click', () => { mainnav.classList.toggle('responsive') }, false);
 
 
 if (document.lastModified) {

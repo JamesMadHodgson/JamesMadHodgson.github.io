@@ -4,15 +4,6 @@
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
         }
-        /*----------- apply a natural box layout model to all elements --------------*/
-        /*body {
-    text-align: center;
-    font-size: 14px;
-    background-color: #f7f7ff;
-    margin: 0.5rem;
-    padding: 10px;
-    flex: 0 1 100%;
-}*/
         
         body {
             background-color: #f7f7ff;
@@ -21,14 +12,7 @@
             font-size: 14px;
         }
         
-        main {
-            background-color: #fff05a;
-            margin: 0.5rem;
-        }
-        
-        header,
         main,
-        nav,
         footer {
             margin: 0 auto;
             max-width: 767px;
@@ -42,49 +26,41 @@
             padding: 2px;
         }
         
-        nav button {
-            margin: .2rem 2%;
-            background-color: transparent;
-            border: none;
-            font-size: 1.6rem;
-            color: #fff;
-        }
-        
         nav {
             margin: 0 auto;
             max-width: 760px;
             background-color: #fec601;
-            text-align: center;
         }
         
-        nav ul {
-            list-style-type: none;
+        .navigation {
+            list-style: none;
             padding: 0;
-            margin: 0;
-            overflow: hidden;
         }
         
-        nav a:hover {
-            background-color: #654f6f;
-            color: #f1fffa;
-        }
-        
-        nav ul li a {
+        .navigation li:first-child {
             display: block;
-            padding: 2px;
-            margin: 2px;
-            border-top: 1px solid #654f6f;
         }
         
-        nav ul.hide {
+        .navigation li {
             display: none;
         }
-        /*----- Clearfix: Force an Element not to collapse -----*/
         
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
+        .navigation a {
+            display: block;
+            padding: 0.75rem;
+            text-align: center;
+            text-decoration: none;
+            color: #654f6f;
+            font-weight: 500;
+        }
+        
+        .navigation a:hover {
+            color: #f1fffa;
+            background-color: #654f6f;
+        }
+        
+        .responsive li {
+            display: block;
         }
         
         main {
@@ -98,7 +74,7 @@
             padding: 5px;
             margin: 5px;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 5px;
             display: block;
             border-top: 1px solid rgba(0, 0, 0, 0.3);
         }

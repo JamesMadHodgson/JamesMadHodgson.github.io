@@ -1,19 +1,18 @@
 /* Desktop Views */
 
 @media only screen and (min-width: 60em) {
-    nav ul {
+    .navigation {
         display: flex;
     }
-    nav ul li {
-        display: inline-block;
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 auto;
     }
-    nav ul li a {
-        padding: .6rem 1rem;
+    .navigation a {
+        text-align: center;
     }
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    main div {
-        grid-column: span 1;
+    .navigation li:first-child {
+        display: none;
     }
 }
