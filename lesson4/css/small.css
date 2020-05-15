@@ -13,6 +13,7 @@
         }
         
         header {
+            font-family: 'Crimson Text', serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -29,7 +30,7 @@
         }
         
         .m {
-            font-style: italic;
+            font-family: 'Crimson Text', serif;
             letter-spacing: 1pt;
             color: yellow;
             margin-left: 20px;
@@ -53,6 +54,7 @@
         footer,
         a {
             color: black;
+            font-family: 'Crimson Text', serif;
         }
         
         nav {
