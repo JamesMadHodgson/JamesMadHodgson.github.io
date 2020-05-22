@@ -16,7 +16,6 @@
             padding: .8em;
             text-align: center;
             background: radial-gradient(#fec601, #fec601);
-            font-family: var(--header-font);
         }
         
         header {
