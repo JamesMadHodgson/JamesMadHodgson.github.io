@@ -18,3 +18,6 @@ if (d.getDay() == 5) {
 } else {
     document.getElementById('banner').style.display = 'none';
 }
+
+/* wind chill */
+let w
