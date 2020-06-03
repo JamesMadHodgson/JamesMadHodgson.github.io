@@ -11,11 +11,11 @@ footer {
     margin: 0 auto;
 }
 
-.pictures img[data-src] {
+img[data-src] {
     filter: blur(0.2em);
 }
 
-.pictures img {
+img {
     filter: blur(0em);
     transition: filter 0.5s;
 }

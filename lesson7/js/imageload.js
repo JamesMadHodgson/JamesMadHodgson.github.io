@@ -1,5 +1,9 @@
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
+const imgOptions = {
+    threshold: 0,
+    rootMargin: '0px 0px 50px 0px'
+}
 
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
@@ -8,10 +12,6 @@ const loadImages = (image) => {
     };
 };
 
-const imgOptions = {
-    threshold: 0,
-    rootMargin: '0px 0px 50px 0px'
-}
 
 
 if ('IntersectionObserver' in window) {
