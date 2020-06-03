@@ -1,0 +1,21 @@
+main,
+footer {
+    background-color: blue;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 5px;
+}
+
+.pictures {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.pictures img[data-src] {
+    filter: blur(0.2em);
+}
+
+.pictures img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
