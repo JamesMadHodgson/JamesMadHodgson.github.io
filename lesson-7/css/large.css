@@ -27,8 +27,8 @@
         box-shadow: 0 0 500px #fec601;
         margin: .3em;
     }
-    main .container {
+    .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr 1fr));
+        grid-template-columns: repeat(auto-fit( 1fr 1fr 1fr));
     }
 }
