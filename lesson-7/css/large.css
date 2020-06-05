@@ -1,6 +1,6 @@
 /* Desktop Views */
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 55em) {
     .headings h1 {
         font-size: 3rem;
     }
@@ -25,11 +25,12 @@
     }*/
 }
 
+.norm:hover {
+    box-shadow: 0 0 500px #fec601;
+    margin: .3em;
+}
+
 main .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr 1fr));
-}
-
-.norm:hover {
-    box-shadow: 0 0 500px #fec601;
 }
