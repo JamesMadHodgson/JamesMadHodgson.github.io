@@ -131,8 +131,7 @@
   figcaption {
       font-size: smaller;
   }
-  /* hover effect */
   
   .norm:hover {
-      box-shadow: 0 0 500px #fec601;
+      box-shadow: 0;
   }

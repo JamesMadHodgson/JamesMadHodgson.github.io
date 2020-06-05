@@ -19,12 +19,17 @@
     .navigation a {
         text-align: center;
     }
+    /*
     .navigation li:first-child {
         display: none;
-    }
+    }*/
 }
 
 main .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr 1fr));
+}
+
+.norm:hover {
+    box-shadow: 0 0 500px #fec601;
 }
