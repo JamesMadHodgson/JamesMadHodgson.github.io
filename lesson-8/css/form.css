@@ -46,9 +46,9 @@ form input.submitBtn {
     background-color: #9c2c13;
     color: white;
     border-radius: 1rem;
-    padding: .75rem 1.5rem;
+    padding: .75rem 1rem;
     margin: 0 0 2rem 2%;
-    width: 96%;
+    width: 90%;
     max-width: 20rem;
 }
 
@@ -64,11 +64,8 @@ form label.top input:required:valid {
 /* 64em is also 1028px (if basefont is 16px) */
 
 @media only screen and (min-width: 64rem) {
-    header,
-    nav,
-    main,
-    footer {
-        max-width: 64rem;
+    main {
+        max-width: 760px;
         margin: auto;
     }
     form label.sbs {
