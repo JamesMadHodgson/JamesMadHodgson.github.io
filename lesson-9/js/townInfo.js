@@ -19,7 +19,6 @@ fetch(requestURL)
             let h2 = document.createElement('h2');
             let motto = document.createElement('h3');
             let image = document.createElement('img');
-            let alt = document.createElement('alt');
             let year = document.createElement('h4');
             let population = document.createElement('h4');
             let rainfall = document.createElement('h4');
@@ -30,10 +29,10 @@ fetch(requestURL)
             motto.textContent = towns[i].motto;
             town.appendChild(motto);
 
-            alt.setAttribute('alt', towns[i].name);
+
             image.setAttribute('src', `images/${towns[i].photo}`);
             town.appendChild(image);
-            town.appendChild(alt);
+
 
             year.textContent = 'Year Founded: ' + towns[i].yearFounded;
             town.appendChild(year);
