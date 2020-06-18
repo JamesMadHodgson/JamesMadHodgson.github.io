@@ -21,4 +21,13 @@
         display: none;
     }
     /* week 9 lesson */
+    .mapdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    iframe {
+        display: block;
+    }
 }

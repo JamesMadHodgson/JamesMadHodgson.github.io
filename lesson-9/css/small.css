@@ -106,3 +106,21 @@
       font-family: 'Bebas Neue', cursive;
   }
   /*lesson 9/*
+
+  /* map from lesson 5 */
+  
+  .mapdiv {
+      background-color: #fff05a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  
+  iframe {
+      display: none;
+  }
+  
+  iframe {
+      margin: 20px;
+  }

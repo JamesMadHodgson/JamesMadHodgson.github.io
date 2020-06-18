@@ -1,90 +1,52 @@
-var preston = document.querySelector('.item2');
-var sodasprings = document.querySelector('.item3');
-var fishhaven = document.querySelector('.item4');
-
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var request = new XMLHttpRequest();
-
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function() {
-    var townData = request.response;
-    townPreston(townData);
-    townFishHaven(townData);
-    townSodaSprings(townData);
-}
-
-function townPreston(jsonObj) {
-    var towns = jsonObj['towns']
-
-    var townName = document.createElement('h2');
-    townName.textContent = towns[4].name;
-    preston.appendChild(townName);
-
-    var townMotto = document.createElement('h3');
-    townMotto.textContent = '"' + towns[4].motto + '"';
-    preston.appendChild(townMotto);
-
-    var townFound = document.createElement('h4');
-    townFound.textContent = 'Founded: ' + towns[4].yearFounded;
-    preston.appendChild(townFound);
-
-    var townPop = document.createElement('h4');
-    townPop.textContent = 'Population: ' + towns[4].currentPopulation;
-    preston.appendChild(townPop);
-
-    var townRain = document.createElement('h4');
-    townRain.textContent = 'Average Precipitation: ' + towns[4].averageRainfall + '"';
-    preston.appendChild(townRain);
-}
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 
-function townSodaSprings(jsonObj) {
-    var towns = jsonObj['towns']
 
-    var townName = document.createElement('h2');
-    townName.textContent = towns[5].name;
-    sodasprings.appendChild(townName);
+fetch(requestURL)
+    .then(function(response) {
+        return response.json();
+    })
 
-    var townMotto = document.createElement('h3');
-    townMotto.textContent = '"' + towns[5].motto + '"';
-    sodasprings.appendChild(townMotto);
-
-    var townFound = document.createElement('h4');
-    townFound.textContent = 'Founded: ' + towns[5].yearFounded;
-    sodasprings.appendChild(townFound);
-
-    var townPop = document.createElement('h4');
-    townPop.textContent = 'Population: ' + towns[5].currentPopulation;
-    sodasprings.appendChild(townPop);
-
-    var townRain = document.createElement('h4');
-    townRain.textContent = 'Average Precipitation: ' + towns[5].averageRainfall + '"';
-    sodasprings.appendChild(townRain);
-}
+.then(function(jsonObject) {
+    console.table(jsonObject);
 
 
-function townFishHaven(jsonObj) {
-    var towns = jsonObj['towns']
 
-    var townName = document.createElement('h2');
-    townName.textContent = towns[1].name;
-    fishhaven.appendChild(townName);
+    var towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++) {
+        if (i == 1 || i == 4 || i == 5) {
+            let town = document.createElement('section');
+            let h2 = document.createElement('h2');
+            let motto = document.createElement('h3');
+            let image = document.createElement('img');
+            let alt = document.createElement('alt');
+            let year = document.createElement('p');
+            let population = document.createElement('p');
+            let rainfall = document.createElement('p');
 
-    var townMotto = document.createElement('h3');
-    townMotto.textContent = '"' + towns[1].motto + '"';
-    fishhaven.appendChild(townMotto);
+            h2.textContent = towns[i].name;
+            town.appendChild(h2);
 
-    var townFound = document.createElement('h4');
-    townFound.textContent = 'Founded: ' + towns[1].yearFounded;
-    fishhaven.appendChild(townFound);
+            motto.textContent = towns[i].motto;
+            town.appendChild(motto);
 
-    var townPop = document.createElement('h4');
-    townPop.textContent = 'Population: ' + towns[1].currentPopulation;
-    fishhaven.appendChild(townPop);
+            alt.setAttribute('alt', towns[i].name);
+            image.setAttribute('src', `images/${towns[i].photo}`);
+            town.appendChild(image);
+            town.appendChild(alt);
 
-    var townRain = document.createElement('h4');
-    townRain.textContent = 'Average Precipitation: ' + towns[1].averageRainfall + '"';
-    fishhaven.appendChild(townRain);
-}
+            year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            town.appendChild(year);
+
+            population.textContent = 'Population: ' + towns[i].currentPopulation;
+            town.appendChild(population);
+
+            rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+            town.appendChild(rainfall);
+
+
+
+            document.querySelector('div.towns').appendChild(town);
+        }
+    }
+});
