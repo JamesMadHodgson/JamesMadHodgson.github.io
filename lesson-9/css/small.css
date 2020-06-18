@@ -95,7 +95,7 @@
   
   .navigation a:hover {
       color: #f1fffa;
-      background-color: #654f6f;
+      background-color: #4B0082;
   }
   
   .responsive li {
@@ -105,8 +105,45 @@
   main {
       font-family: 'Bebas Neue', cursive;
   }
-  /*lesson 9/*
-
+  /*lesson 9*/
+  
+  .towns {
+      display: grid;
+      grid-template-columns: 500px;
+      justify-content: center;
+      grid-gap: 5px;
+      padding: 2em 2em;
+      background-color: ghostwhite;
+  }
+  
+  section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff05a;
+      border: 1px solid black;
+  }
+  
+  section img {
+      max-width: 300px;
+      box-shadow: 0 0 5px;
+      margin-bottom: .5rem;
+  }
+  
+  h2,
+  h3,
+  h4 {
+      padding: .2rem;
+      margin-top: .3rem;
+      margin-bottom: .2rem;
+      color: #4B0082;
+  }
+  
+  .towns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+  }
   /* map from lesson 5 */
   
   .mapdiv {

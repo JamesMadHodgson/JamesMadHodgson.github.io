@@ -20,9 +20,9 @@ fetch(requestURL)
             let motto = document.createElement('h3');
             let image = document.createElement('img');
             let alt = document.createElement('alt');
-            let year = document.createElement('p');
-            let population = document.createElement('p');
-            let rainfall = document.createElement('p');
+            let year = document.createElement('h4');
+            let population = document.createElement('h4');
+            let rainfall = document.createElement('h4');
 
             h2.textContent = towns[i].name;
             town.appendChild(h2);
