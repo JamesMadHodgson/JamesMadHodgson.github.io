@@ -24,4 +24,21 @@
         display: none;
     }*/
     /* week 9 lesson */
+    .norm:hover {
+        box-shadow: 0 0 500px #fec601;
+        margin: .3em;
+    }
+    .towns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .towns article {
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .towns article:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+    }
 }

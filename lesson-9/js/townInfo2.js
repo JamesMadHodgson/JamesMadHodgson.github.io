@@ -15,37 +15,47 @@ fetch(requestURL)
     var towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++) {
         if (i == 1 || i == 4 || i == 5) {
-            let artTown = document.createElement('article');
-            let divData = document.createElement('div');
+            let town = document.createElement('section');
+            let data = document.createElement('div');
             let h2 = document.createElement('h2');
-            let motto = document.createElement('h4');
+            let motto = document.createElement('h3');
             let year = document.createElement('h4');
             let population = document.createElement('h4');
             let rainfall = document.createElement('h4');
             let image = document.createElement('img');
 
-            artTown.appendChild(divData);
-
             h2.textContent = towns[i].name;
-            divData.appendChild(h2);
+            town.appendChild(h2);
 
             motto.textContent = towns[i].motto;
-            divData.appendChild(motto);
+            town.appendChild(motto);
 
-            year.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            divData.appendChild(year);
+            data.appendChild(h2);
+            data.appendChild(motto);
+            data.appendChild(year);
+            data.appendChild(population);
+            data.appendChild(rainfall);
 
-            population.textContent = 'Population: ' + towns[i].currentPopulation;
-            divData.appendChild(population);
-
-            rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-            divData.appendChild(rainfall);
+            data.setAttribute('class', 'data');
+            town.setAttribute('class', 'town');
 
             image.setAttribute('src', `images/${towns[i].photo}`);
-            artTown.appendChild(image);
 
 
-            document.querySelector('div.towns').appendChild(artTown);
+
+            year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+
+
+            population.textContent = 'Population: ' + towns[i].currentPopulation;
+
+
+            rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+
+
+
+            town.appendChild(data);
+            town.appendChild(image);
+            document.querySelector('.towns').appendChild(town);
         }
     }
 });
