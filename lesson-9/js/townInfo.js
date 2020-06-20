@@ -42,6 +42,7 @@ fetch(requestURL)
             divData.appendChild(rainfall);
 
             image.setAttribute('src', `images/${towns[i].photo}`);
+            image.setAttribute('alt', `images/${towns[i].photo}`);
             artTown.appendChild(image);
 
 
