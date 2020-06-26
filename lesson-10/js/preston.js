@@ -33,7 +33,7 @@ if (t <= 50 && s >= 3) {
 /* fiveday */
 
 
-const forecastApiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=38246ebcfa743f03eef5e9626ed4d208";
+const forecastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=38246ebcfa743f03eef5e9626ed4d208";
 fetch(forecastApiURL)
     .then((response) => response.json())
     .then((jsObject) => {
