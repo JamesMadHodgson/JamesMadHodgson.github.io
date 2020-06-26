@@ -28,11 +28,12 @@
 }
 
 .Dayflex div {
-    background-color: gray;
+    background: radial-gradient(#eee, #4567aa);
     width: 100px;
     margin: 0 auto;
-    line-height: 50px;
+    line-height: 25px;
     font-size: 20px;
+    padding: 10px;
 }
 
 .Dayflex {

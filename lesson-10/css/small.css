@@ -52,7 +52,7 @@
     main,
     footer {
         margin: 0 auto;
-        max-width: 760px;
+        max-width: 800px;
         padding: 2px;
     }
     
@@ -135,7 +135,7 @@
         display: none;
     }
     
-    .article {
+    article {
         background-color: #fff05a;
         margin: 10px;
         width: 100%;
@@ -148,15 +148,15 @@
     
     article .article img {
         float: none;
-        padding: 20px;
+        padding: 10px;
     }
     
-    article {
+    .article {
         margin: 2em 0 2em 0;
     }
     
     article p {
-        padding: 10px;
+        padding: 7px;
     }
     
     .mapdiv {
