@@ -11,7 +11,7 @@ fetch(requestURL)
 
     const towns = jsonObject['towns'];
 
-    const event = towns.filter(town => (town.name == 'Soda Springs'));
+    const event = towns.filter(town => (town.name == 'Preston'));
 
     event.forEach(town => {
 

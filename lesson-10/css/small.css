@@ -138,21 +138,11 @@
     article {
         background-color: #fff05a;
         margin: 10px;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .border {
-        position: relative;
     }
     
     article .article img {
         float: none;
         padding: 10px;
-    }
-    
-    .article {
-        margin: 2em 0 2em 0;
     }
     
     article p {
