@@ -98,6 +98,11 @@
         background-color: #654f6f;
     }
     
+    nav a.active {
+        color: white;
+        background-color: #4B0082;
+    }
+    
     .responsive li {
         display: block;
     }

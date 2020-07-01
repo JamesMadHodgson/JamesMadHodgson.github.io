@@ -95,6 +95,12 @@
       
       .navigation a:hover {
           color: #f1fffa;
+          background-color: #654f6f;
+          ;
+      }
+      
+      nav a.active {
+          color: white;
           background-color: #4B0082;
       }
       
