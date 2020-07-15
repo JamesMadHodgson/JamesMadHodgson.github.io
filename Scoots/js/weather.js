@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=38246ebcfa743f03eef5e9626ed4d208";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&APPID=38246ebcfa743f03eef5e9626ed4d208";
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -12,32 +12,18 @@ fetch(apiURL)
     });
 
 
-/*windchill*/
 
-let t = document.getElementById('temp').textContent;
-let s = document.getElementById('speed').textContent;
-
-let x = 'N/A';
-
-if (t <= 50 && s >= 3) {
-    let y = Math.pow(s, 0.16);
-    let f = 35.74 + 0.6215 * t - 35.75 * y + 0.4275 * t * y;
-    let x = f.toFixed(0);
-    document.getElementById('chill').textContent = x;
-} else {
-    document.getElementById('chill').textContent = 'N/A';
-}
 
 /* fiveday */
 
 
-const forecastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=38246ebcfa743f03eef5e9626ed4d208";
+const forecastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=38246ebcfa743f03eef5e9626ed4d208";
 fetch(forecastApiURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
 
-        const fivedayforecast = jsObject.list.filter(f => f.dt_txt.includes('12:00:00'));
+        const fivedayforecast = jsObject.list.filter(f => f.dt_txt.includes('18:00:00'));
 
         const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thru', 'Fri', 'Sat'];
 
