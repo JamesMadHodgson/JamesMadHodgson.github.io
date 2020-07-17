@@ -25,25 +25,35 @@
     .forecast {
         display: block;
     }
-}
-
-.Dayflex div {
-    background: radial-gradient(#eee, #4567aa);
-    width: 50px;
-    margin: 0 auto;
-    line-height: 5px;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.Dayflex {
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-}
-
-.locations {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .Dayflex div {
+        background: radial-gradient(#eee, #4567aa);
+        width: 50px;
+        margin: 0 auto;
+        line-height: 5px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .Dayflex {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+    .locations {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .locationtour {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .locationtour article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 5px;
+    }
 }

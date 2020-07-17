@@ -1,21 +1,30 @@
-/* Desktop Views */
-
-@media only screen and (min-width: 60em) {
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
-    .navigation a {
-        text-align: center;
-    }
-    .navigation li:first-child {
-        display: none;
-    }
-    .locations {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+            /* Desktop Views */
+            
+            @media only screen and (min-width: 60em) {
+                .navigation {
+                    display: flex;
+                }
+                .navigation li {
+                    display: block;
+                    flex: 1 1 auto;
+                }
+                .navigation a {
+                    text-align: center;
+                }
+                .navigation li:first-child {
+                    display: none;
+                }
+                .locations {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .locationtour {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .locationtour article {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-align: center;
+                }
+            }

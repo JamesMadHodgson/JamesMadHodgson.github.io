@@ -84,7 +84,7 @@
   main {
       background-color: #f9d5a8;
       margin: 0 auto;
-      max-width: 800px;
+      max-width: 1000px;
       padding: 2px;
   }
   
@@ -135,6 +135,18 @@
       padding: 1em;
   }
   
+  .locationtour {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+      text-align: center;
+      justify-content: center;
+      grid-gap: 5px
+  }
+  
+  .locationtour p {
+      padding: 10px;
+  }
+  
   .locDiv {
       background-color: #5BC0EB;
       align-self: center;
@@ -144,8 +156,82 @@
       padding: 10px;
   }
   
+  .locDiv img {
+      margin: 0 auto;
+      padding: 10px, 10px;
+  }
+  
   .locDiv p {
-      padding: 5px;
+      padding: 10px;
+  }
+  
+  article {
+      background-color: #5BC0EB;
+      align-self: center;
+      justify-self: center;
+      max-width: 300px;
+      box-shadow: 0 0 5px;
+      padding: 10px;
+  }
+  /* Contact page css and form css for contact page*/
+  
+  .pageWel {
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .PageWel p {
+      font-size: 30px;
+  }
+  
+  form label.top,
+  form div {
+      display: block;
+      padding-top: 1rem;
+      color: red;
+      font-size: 1.2rem;
+  }
+  
+  form legend {
+      font-size: 25px;
+  }
+  
+  form label.top input,
+  form label.top select {
+      -webkit-appearnace: none;
+      display: block;
+      font-size: 1rem;
+      border: 1px #5BC0EB;
+      border-radius: 4px;
+      padding: .75rem;
+      color: #555;
+      width: 100%;
+      max-width: 20rem;
+      background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  form input.submitBtn {
+      border: 1px solid black;
+      background-color: #5BC0EB;
+      color: white;
+      border-radius: 1rem;
+      text-align: center;
+      padding: .75rem 1rem;
+      margin: 0 0 2rem 2%;
+      width: 90%;
+      max-width: 10rem;
+  }
+  
+  form label.top input:required {
+      border-left: red solid 6px;
+  }
+  
+  form label.top input:required:valid {
+      border-left: green solid 6px;
+  }
+  
+  iframe {
+      padding: 10px, 10px;
   }
   
   footer {
