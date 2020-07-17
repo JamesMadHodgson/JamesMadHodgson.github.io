@@ -173,41 +173,42 @@
       box-shadow: 0 0 5px;
       padding: 10px;
   }
-  /* Contact page css and form css for contact page*/
   
   .pageWel {
       text-align: center;
       padding: 10px;
   }
   
-  .PageWel p {
-      font-size: 30px;
+  .PageWel,
+  p {
+      font-size: 20px;
   }
+  /*  form css*/
   
   form label.top,
   form div {
       display: block;
       padding-top: 1rem;
       color: red;
-      font-size: 1.2rem;
+      font-size: 1rem;
   }
   
   form legend {
-      font-size: 25px;
+      font-size: 30px;
+      text-align: center;
+      padding: 30px;
   }
   
   form label.top input,
   form label.top select {
-      -webkit-appearnace: none;
-      display: block;
-      font-size: 1rem;
-      border: 1px #5BC0EB;
-      border-radius: 4px;
-      padding: .75rem;
-      color: #555;
+      display: flex;
       width: 100%;
-      max-width: 20rem;
-      background-color: rgba(0, 0, 0, 0.1);
+      padding: 12px 20px 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #5BC0EB;
+      border-radius: 4px;
+      box-sizing: border-box;
   }
   
   form input.submitBtn {
@@ -219,7 +220,6 @@
       padding: .75rem 1rem;
       margin: 0 0 2rem 2%;
       width: 90%;
-      max-width: 10rem;
   }
   
   form label.top input:required {
@@ -229,6 +229,7 @@
   form label.top input:required:valid {
       border-left: green solid 6px;
   }
+  /*  end form css*/
   
   iframe {
       padding: 10px, 10px;

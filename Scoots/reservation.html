@@ -1,0 +1,130 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="James Hodgson">
+    <title>Scoots rentals this site rents honda equipment for locals and vistors transportation needs</title>
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <meta name="description" content="Scoots si a rental site for those that live or visit Cozumel.  We rent all Honda type scooters, ATVS and jeep wranglers ">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="scootsIcon">
+            <img src="image/Scoots150.png" alt="scoots rental Image">
+        </div>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a class="active" href="reservation.html">Reservation</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact info</a></li>
+
+            </ul>
+        </nav>
+
+
+        <div class="pageWel">
+            <h1>Scoots Reservations</h1>
+            <p>Scoots has two convenient locations on Cozumel.<br> The Playa del Carmen-Cozumel Ferry Dock and the other one near the Terminal Puerta Maya.<br>Rentals can be picked up and/or returned to either location.</p>
+        </div>
+        <div class="pageWel">
+            <h3>Rental Agreement and Services</h3>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservation.</li>
+                <li>A valid driver's license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is NOT included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either of Scoots convenient locations.</li>
+            </ul>
+        </div>
+        <div class="pageWel ">
+            <h1>Rental Information</h1>
+            <p>Please fill out the required information</p>
+        </div>
+        <form method="GET " action="pay.html ">
+
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">  Full Name* <input type="text" name="Fullname" placeholder="fullname" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" required></label>
+                <label class="top">  Email* <input type="email " name="email " placeholder="someone@yahoo.com"  ></label>
+                <label class="top">  Phone* <input type="tel " name="phone " placeholder="phone number " required></label>
+                <label class="top"> Zip code* <input type="number " name="zipcode " placeholder="zipcode " required></label>
+                <label class="top">State or Country*<input type="text " required></label>
+                <label class="top">Cruise Line (if applicable)<input type="text "></label>
+                <label for="textarea "><textarea name="textarea " cols="80 " rows="6 ">Additional Comments such as the need and location of a drop-off request. :</textarea></label>
+
+
+
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Scoots Rental Information</legend>
+                <label class="top ">Rental Type
+                        <select name="Rental Vechicle ">
+                            <option value=" ">Choose Rental Vehicle&#9662; </option>
+                            <option value="Metro ">Honda Metro</option>
+                            <option value="Dio ">Honda Dio</option>
+                            <option value="PCX150 ">Honda PCX150</option>
+                            <option value="ATV ">Honda ATV</option>
+                            <option value="2-Door ">Jeep 2-door</option>
+                            <option value="4-Door ">Jeep 4-door</option>>
+                        </select>
+                   
+                    <label class="top">Start Rental date<input type="date" name="startdate"> </label>
+                <label class="top ">End of Rental date <input type="date" name="enddate"> </label>
+                </label>
+                <input type="submit" value="Reserve Now" class="submitBtn">
+            </fieldset>
+
+
+        </form>
+
+
+
+
+
+    </main>
+    <footer>
+        <div id="SocialMedia ">
+            <p>Social Media links </p>
+            <a href="https://www.facebook.com " target="Blank "><img src="image/Facebook.jpeg " alt="Link to Facebook "></a>
+            <a href="https://www.instagram.com " target="Blank "><img src="image/Instagram.jpeg " alt="Link to instagram "></a>
+
+        </div>
+        <p>&copy; 2020 James Hodgson | Utah | <a href="https://www.byui.edu/online " target="_blank ">BYUI Online
+                Learning</a></p>
+        <p>Today's Date:<span id="currentdate "></span></p>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js "></script>
+    <script src="js/scripts.js "></script>
+    <script src="js/date.js "></script>
+</body>
+
+
+</html>
