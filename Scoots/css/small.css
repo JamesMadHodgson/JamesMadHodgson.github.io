@@ -26,6 +26,10 @@
       margin: 0;
   }
   
+  .forecast {
+      display: none;
+  }
+  
   .weatherinfo {
       position: absolute;
       top: 80px;
