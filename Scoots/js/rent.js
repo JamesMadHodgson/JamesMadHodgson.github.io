@@ -1,7 +1,7 @@
 let data = [{}, ];
 
 function renderData() {
-    fetch("js/rental.json")
+    fetch("rental.json")
         .then(response => response.json())
         .then(json => {
             json.rental.forEach((item) => {
