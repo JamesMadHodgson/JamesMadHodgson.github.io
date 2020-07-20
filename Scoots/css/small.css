@@ -63,7 +63,7 @@
       padding: 0.75rem;
       text-align: center;
       text-decoration: none;
-      color: greenyellow;
+      color: black;
       font-weight: 600;
   }
   
@@ -144,7 +144,7 @@
   }
   
   .locationtour p {
-      padding: 10px;
+      padding: 5px;
   }
   
   .locDiv {
@@ -185,6 +185,10 @@
   }
   /*  form css*/
   
+  fieldset {
+      display: flex;
+  }
+  
   form label.top,
   form div {
       display: block;
@@ -202,6 +206,7 @@
   form label.top input,
   form label.top select {
       display: flex;
+      flex-wrap: wrap;
       width: 100%;
       padding: 12px 20px 12px 20px;
       margin: 8px 0;
