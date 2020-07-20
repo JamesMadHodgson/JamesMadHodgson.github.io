@@ -58,16 +58,12 @@
       display: block;
   }
   
-  .navigation li {
-      display: none;
-  }
-  
   .navigation a {
       display: block;
       padding: 0.75rem;
       text-align: center;
       text-decoration: none;
-      color: pink;
+      color: black;
       font-weight: 600;
   }
   
@@ -79,6 +75,10 @@
   nav a.active {
       color: black;
       background-color: aqua;
+  }
+  
+  .navigation li {
+      display: none;
   }
   
   .responsive li {
